@@ -202,6 +202,7 @@ int sys_umask(int mask);
 int sys_setsid(void);
 int sys_sync(void);
 int sys_creat(const char *path, int mode);
+int sys_rename(const char *oldpath, const char *newpath));
 int sys_fsync(int fd);
 int sys_fdatasync(int fd);
 int sys_syncfs(int fd);

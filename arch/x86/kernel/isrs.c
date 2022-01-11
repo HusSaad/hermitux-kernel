@@ -624,6 +624,12 @@ void syscall_handler(struct state *s)
 		case 80:
 			s->rax = sys_chdir((const char *)s->rdi);
 			break;
+#endif		
+		
+#ifndef DISABLE_SYS_RENAME		
+		case 82:
+			s->rax = sys_rename((const char *)s->rdi, (const char *)s->rsi);
+			break;
 #endif
 
 #ifndef DISABLE_SYS_MKDIR

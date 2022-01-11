@@ -91,6 +91,7 @@ extern uint64_t tux_start_address;
 #define UHYVE_PORT_FCNTL 		0x522
 #define UHYVE_PORT_OPENAT 		0x523
 #define UHYVE_PORT_CREAT 		0x524
+#define UHYVE_PORT_RENAME		0X533
 #define UHYVE_PORT_SYNC 		0x525
 #define UHYVE_PORT_FSYNC 		0x526
 #define UHYVE_PORT_FDATASYNC	0x527
